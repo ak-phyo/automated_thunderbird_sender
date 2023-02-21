@@ -8,7 +8,7 @@ Sending mail via automated service (such as sendmail) is not working anymore wit
 - there have two files that the script need.
 
   - maillist.txt : In this case, I have to track which users are clicking. So I made with this format (email:tracker). You can adjust for your own case.
-  - template.html : this is the body message. I have to update for some parts of the body message based on the recipient name. So I implement iteration and replace the string every round. and replace the original value back after the operation is complete.
+  - template.html : this is the body message. I have to update for some parts of the body message based on the recipient name and tracking id for some purpose. So I implement iteration and replace the string every round. and replace the original value back after the operation is complete. And then parsed from the web server log according to the tracking ID as I need.
 
 - I used some of the thunderbird cli arguments. You can read the full documentation here: http://kb.mozillazine.org/Command_line_arguments_-_Thunderbird
 
